@@ -15,7 +15,7 @@ namespace csharp_abstract_animals
 
         public void Swim()
         {
-            Console.Write("Nuota e nuota, zitto e nuota.");
+            Console.Write("Nuota e nuota, zitto e nuota. ");
             this.Verse();
         }
 

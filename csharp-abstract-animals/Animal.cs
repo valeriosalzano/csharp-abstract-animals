@@ -8,7 +8,7 @@ namespace csharp_abstract_animals
 {
     public abstract class Animal
     {
-        public static void Sleep()
+        public void Sleep()
         {
             Console.WriteLine("Zzz");
         }
