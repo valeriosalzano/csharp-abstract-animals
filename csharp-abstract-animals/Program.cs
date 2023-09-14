@@ -19,6 +19,10 @@ namespace csharp_abstract_animals
                 animal.Verse();
                 Console.Write("Ho fame! Dammi un po' di ");
                 animal.RequiredFood();
+                
+                Console.Write("Mangiare mi ha fatto venire sonno...");
+                animal.Sleep();
+
                 Console.WriteLine("");
             }
 
@@ -40,6 +44,32 @@ namespace csharp_abstract_animals
             {
                 DoSwim(swimmingAnimal);
             }
+
+            Cat rndCat = new Cat();
+            Cat rndCat2 = new Cat();
+
+            Console.WriteLine("\n***** Momento creativo *****\n");
+            Console.Write($"gattino1 - Ciao, sono un gattino appena nato! Ora penso che farò un pisolino...");
+            rndCat.Sleep();
+            Console.Write($"gattino2 - Ciao, anche io sono appena nato, penso che andrò in cerca di ");
+            rndCat2.RequiredFood();
+
+            Console.Write($"gattino1 - Che bella dormita! ");
+            rndCat.Verse();
+            Console.Write("gattino2 - Mentre tu dormivi ho trovato un sacco di ");
+            rndCat2.RequiredFood();
+
+            Console.Write($"gattino1 - A proposito di cibo, ora sono affamato, chissà dove posso trovare un po' di ");
+            rndCat.RequiredFood();
+            Console.Write("gattino2 - Prendi pure quel che mi è avanzato, nel frattempo dormirò un po'...");
+            rndCat2.Sleep();
+
+            Console.Write("gattino1 - Dopo aver mangiato ci vuole un altro po' di sonno...");
+            rndCat.Sleep();
+            Console.Write($"gattino1 - La giornata è volta al termine, è stata produttiva però: ho totalizzato {rndCat.SleepCyclesCounter} pisolini dalla mia nascita!");
+            rndCat.Verse();
+            Console.Write($"gattino2 - Ho solo {rndCat2.SleepCyclesCounter} pisolino fatto. Domani recupererò! ");
+            rndCat2.Verse();
 
         }
 

@@ -8,9 +8,11 @@ namespace csharp_abstract_animals
 {
     public abstract class Animal
     {
+        public int SleepCyclesCounter { get; private set; } = 0;
         public void Sleep()
         {
             Console.WriteLine("Zzz");
+            this.SleepCyclesCounter++;
         }
 
         public abstract void Verse();
